@@ -1,14 +1,15 @@
 package com.capgemini.MathematicalOperations;
 
 /**
- * Hello world!
- *
+ * The MathematicalOperations implements four simple mathematical operations
  */
-public class MathematicalOperations 
-{
-
-	public int sum (int number1, int number2) {
+public class MathematicalOperations {
+	/**
+	 * @param number1
+	 * @param number2
+	 * @return sum of two numbers
+	 */
+	public int sum(int number1, int number2) {
 		return number1 + number2;
 	}
-	
 }
