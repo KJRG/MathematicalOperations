@@ -20,18 +20,54 @@ public class MathematicalOperationsTest
 	
 	@Test
 	public void shouldReturn4For2_2(){
-		assertEquals(4, mo.sum(2,2));
+		
+		//given
+		int number1 = 2;
+		int number2 = 2;
+		
+		// when
+		int result = mo.sum(number1, number2);
+		
+		//then
+		assertEquals(4, result);
 	}
+	
 	@Test
 	public void shouldReturn0For0_0(){
-		assertEquals(0, mo.sum(0,0));
+		
+		//given
+		int number1 = 0;
+		int number2 = 0;
+		
+		// when
+		int result = mo.sum(number1, number2);
+		
+		//then
+		assertEquals(0, result);
 	}
+	
 	@Test
 	public void shouldReturn0Forminus2_plus2(){
-		assertEquals(0, mo.sum(-2,2));
+		//given
+		int number1 = -2;
+		int number2 = 2;
+		
+		// when
+		int result = mo.sum(number1, number2);
+		
+		//then
+		assertEquals(0, result);
 	}
 	@Test
 	public void shouldReturnminus4Forminus2_minus2(){
-		assertEquals(-4, mo.sum(-2,-2));
+		//given
+		int number1 = -2;
+		int number2 = -2;
+		
+		// when
+		int result = mo.sum(number1, number2);
+		
+		//then
+		assertEquals(-4, result);
 	}
 }
