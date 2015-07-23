@@ -25,6 +25,11 @@
 		<artifactId>jama</artifactId>
 		<version>1.0.3</version>
 	</dependency>
+	<dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-math</artifactId>
+    	<version>2.2</version>
+	</dependency>
   </dependencies>
      
   <build>
@@ -41,3 +46,4 @@
 	</plugins>
   </build>
 </project>
+
