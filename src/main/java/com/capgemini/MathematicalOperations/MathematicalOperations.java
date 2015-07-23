@@ -1,5 +1,11 @@
 package com.capgemini.MathematicalOperations;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * The MathematicalOperations implements four simple mathematical operations
  */
