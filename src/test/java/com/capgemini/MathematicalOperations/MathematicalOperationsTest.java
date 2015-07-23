@@ -8,66 +8,57 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class MathematicalOperationsTest 
-{
+
+public class MathematicalOperationsTest {
 
 	MathematicalOperations mo;
-	
+
 	@Before
-	public void setUpBefore(){
+	public void setUpBefore() {
 		mo = new MathematicalOperations();
 	}
-	
+
 	@Test
-	public void shouldReturn4For2_2(){
-		
-		//given
+	public void shouldReturn4For2_2() {
+		// given
 		int number1 = 2;
 		int number2 = 2;
-		
 		// when
 		int result = mo.sum(number1, number2);
-		
-		//then
+		// then
 		assertEquals(4, result);
 	}
-	
+
 	@Test
-	public void shouldReturn0For0_0(){
-		
-		//given
+	public void shouldReturn0For0_0() {
+		// given
 		int number1 = 0;
 		int number2 = 0;
-		
 		// when
 		int result = mo.sum(number1, number2);
-		
-		//then
+		// then
 		assertEquals(0, result);
 	}
-	
+
 	@Test
-	public void shouldReturn0Forminus2_plus2(){
-		//given
+	public void shouldReturn0Forminus2_plus2() {
+		// given
 		int number1 = -2;
 		int number2 = 2;
-		
 		// when
 		int result = mo.sum(number1, number2);
-		
-		//then
+		// then
 		assertEquals(0, result);
 	}
+
 	@Test
-	public void shouldReturnminus4Forminus2_minus2(){
-		//given
+	public void shouldReturnminus4Forminus2_minus2() {
+		// given
 		int number1 = -2;
 		int number2 = -2;
-		
 		// when
 		int result = mo.sum(number1, number2);
-		
-		//then
+		// then
 		assertEquals(-4, result);
 	}
 }
