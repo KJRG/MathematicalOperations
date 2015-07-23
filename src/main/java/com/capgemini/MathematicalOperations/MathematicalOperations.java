@@ -12,4 +12,11 @@ public class MathematicalOperations {
 	public int sum(int number1, int number2) {
 		return number1 + number2;
 	}
+	
+	/**
+	 * @return product of <b>arg0</b> and <b>arg1</b>
+	 */
+	public double product(double arg0, double arg1) {
+		return arg0*arg1;
+	}
 }
