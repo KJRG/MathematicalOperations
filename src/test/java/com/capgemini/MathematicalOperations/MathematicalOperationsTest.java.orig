@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.capgemini.MathematicalOperations;
 
 import static org.junit.Assert.assertEquals;
@@ -38,6 +39,27 @@ public class MathematicalOperationsTest {
 		assertEquals(2, mo.calculateQuadraticResidues(2).size());
 		assertTrue(mo.calculateQuadraticResidues(2).contains(0));
 		assertTrue(mo.calculateQuadraticResidues(2).contains(1));
+	}
+}
+=======
+package com.capgemini.MathematicalOperations;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * Unit test for simple App.
+ */
+
+public class MathematicalOperationsTest {
+
+	MathematicalOperations mo;
+
+	@Before
+	public void setUpBefore() {
+		mo = new MathematicalOperations();
 	}
 
 	@Test
@@ -84,3 +106,4 @@ public class MathematicalOperationsTest {
 		assertEquals(-4, result);
 	}
 }
+>>>>>>> fb43749639640cc68e94016bc127eef816a00f71
