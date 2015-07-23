@@ -9,13 +9,6 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class MathematicalOperationsTest 
-{
-	@Test
-	public void absShouldReturn0For0() {
-		MathematicalOperations mo = new MathematicalOperations();
-		assertEquals(0, mo.abs(0), 0);
-	}
 
 public class MathematicalOperationsTest {
 
@@ -24,6 +17,56 @@ public class MathematicalOperationsTest {
 	@Before
 	public void setUpBefore() {
 		mo = new MathematicalOperations();
+	}
+
+	@Test
+	public void absShouldReturn0For0() {
+		// given
+		double number = 0;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(0, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn1For1() {
+		// given
+		double number = 1;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(1, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn1ForMinus1() {
+		// given
+		double number = -1;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(1, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn2For2() {
+		// given
+		double number = 2;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(2, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn2ForMinus2() {
+		// given
+		double number = -2;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(2, result, 0);
 	}
 
 	@Test
