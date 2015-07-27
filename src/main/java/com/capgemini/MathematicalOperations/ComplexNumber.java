@@ -13,8 +13,8 @@ public class ComplexNumber extends Complex {
 	 * @param another Complex number
 	 * @return Distance from <b>this</b> number to <b>another</b> number.
 	 */
-	public double distanceTo(Complex another) {
-		return another.abs() - abs();
+	public double absoluteDistanceTo(Complex another) {
+		return Math.sqrt(Math.pow(another.getReal()-getReal(), 2) + Math.pow(another.getImaginary()-getImaginary(), 2));
 	}
 
 }
