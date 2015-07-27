@@ -1,5 +1,6 @@
 package com.capgemini.MathematicalOperations;
 
+//import org.apache.commons.math3;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -25,6 +26,15 @@ public class MathematicalOperationsTest {
 	@Test(expected = IllegalArgumentException.class)
 	public void shouldThrowIllegalArgumentExceptionWhenGiven0() {
 		mo.calculateQuadraticResidues(0);
+		}
+	@Test
+	public void absShouldReturn0For0() {
+		// given
+		double number = 0;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(0, result, 0);
 	}
 
 	@Test
@@ -38,6 +48,45 @@ public class MathematicalOperationsTest {
 		assertEquals(2, mo.calculateQuadraticResidues(2).size());
 		assertTrue(mo.calculateQuadraticResidues(2).contains(0));
 		assertTrue(mo.calculateQuadraticResidues(2).contains(1));
+		
+	@Test
+	public void absShouldReturn1For1() {
+		// given
+		double number = 1;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(1, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn1ForMinus1() {
+		// given
+		double number = -1;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(1, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn2For2() {
+		// given
+		double number = 2;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(2, result, 0);
+	}
+	
+	@Test
+	public void absShouldReturn2ForMinus2() {
+		// given
+		double number = -2;
+		// when
+		double result = mo.abs(number);
+		// then
+		assertEquals(2, result, 0);
 	}
 
 	@Test

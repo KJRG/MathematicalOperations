@@ -11,6 +11,15 @@ import java.util.Set;
  */
 public class MathematicalOperations {
 	/**
+	 * 
+	 * @param number
+	 * @return absolute value of number
+	 */
+	public double abs(double number) {
+		return number < 0 ? number * -1 : number;
+	}
+	
+	/**
 	 * @param number1
 	 * @param number2
 	 * @return sum of two numbers
