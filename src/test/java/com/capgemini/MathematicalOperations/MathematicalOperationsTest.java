@@ -48,6 +48,7 @@ public class MathematicalOperationsTest {
 		assertEquals(2, mo.calculateQuadraticResidues(2).size());
 		assertTrue(mo.calculateQuadraticResidues(2).contains(0));
 		assertTrue(mo.calculateQuadraticResidues(2).contains(1));
+	}
 		
 	@Test
 	public void absShouldReturn1For1() {
