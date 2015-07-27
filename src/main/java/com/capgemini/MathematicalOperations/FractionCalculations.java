@@ -3,6 +3,7 @@ package com.capgemini.MathematicalOperations;
 import java.util.List;
 import org.apache.commons.math.fraction.*;
 
+
 public class FractionCalculations {
 	public Fraction getBiggestValue(List<Fraction> values) {
 		if(values.isEmpty()) {
