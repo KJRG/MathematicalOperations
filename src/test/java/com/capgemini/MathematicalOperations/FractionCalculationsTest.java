@@ -1,14 +1,13 @@
 package com.capgemini.MathematicalOperations;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.commons.math.fraction.Fraction;
 import org.junit.Test;
-
-import org.apache.commons.math.fraction.*;
 
 public class FractionCalculationsTest {
 
@@ -28,7 +27,7 @@ public class FractionCalculationsTest {
 
 		FractionCalculations fc = new FractionCalculations();
 
-		Fraction f = fc.getBiggestValue(fractions);
+		fc.getBiggestValue(fractions);
 	}
 
 }
