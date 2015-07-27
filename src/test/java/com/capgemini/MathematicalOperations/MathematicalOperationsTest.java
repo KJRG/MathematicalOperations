@@ -54,6 +54,7 @@ public class MathematicalOperationsTest {
 		// then
 		assertTrue(mo.product(arg0, arg1) > 0);
 		assertTrue(mo.product(arg1, arg0) > 0);
+	}
 	@Test(expected = IllegalArgumentException.class)
 	public void shouldThrowIllegalArgumentExceptionWhenGivenNegativeNumber() {
 		mo.calculateQuadraticResidues(-5);
