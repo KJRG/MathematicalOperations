@@ -7,17 +7,53 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class MathematicalOperationsTest {
-	MathematicalOperations mo;
-
+	private MathematicalOperations mo;
+	private double arg0, arg1;
+	
 	@Before
 	public void setUp() {
 		mo = new MathematicalOperations();
 	}
 
+	@Test
+	public void resultIs0IfAnyArgumentEquals0() {
+		// given
+		arg0 = 0;
+		arg1 = 1;
+		// then
+		assertTrue(mo.product(arg0, arg1) == 0.0);
+		assertTrue(mo.product(arg1, arg0) == 0.0);
+		assertTrue(mo.product(arg0, arg0) == 0.0);
+	}
+
+	@Test
+	public void resultIsArg0IfArg1Equals1() {
+		// given
+		arg0 = 10;
+		arg1 = 1;
+		// then
+		assertTrue(mo.product(arg0, arg1) == arg0);
+	}
+
+	@Test
+	public void resultIsNegativeIfOneArgumentIsPositiveAndOtherIsNegative() {
+		// given
+		arg0 = 11;
+		arg1 = -1;
+		// then
+		assertTrue(mo.product(arg0, arg1) < 0);
+		assertTrue(mo.product(arg1, arg0) < 0);
+	}
+
+	@Test
+	public void resultIsPositiveIfBothArg0AndArg1AreNegative() {
+		// given
+		arg0 = -10;
+		arg1 = -2;
+		// then
+		assertTrue(mo.product(arg0, arg1) > 0);
+		assertTrue(mo.product(arg1, arg0) > 0);
 	@Test(expected = IllegalArgumentException.class)
 	public void shouldThrowIllegalArgumentExceptionWhenGivenNegativeNumber() {
 		mo.calculateQuadraticResidues(-5);
