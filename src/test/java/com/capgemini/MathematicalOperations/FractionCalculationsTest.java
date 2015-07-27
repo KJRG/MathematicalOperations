@@ -28,7 +28,7 @@ public class FractionCalculationsTest {
 
 		FractionCalculations fc = new FractionCalculations();
 
-		Fraction f = fc.getBiggestValue(fractions);
+		fc.getBiggestValue(fractions);
 	}
 
 }
